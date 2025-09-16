@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Vagas - EMPREGOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Cadastro de Vaga</h1>
+            <nav>
+                <a href="index.html">Ver Vagas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Cadastrar Nova Vaga de Emprego</h2>
+        <div class="card">
+            <form id="cadastroForm">
+                <div class="form-group">
+                    <label for="idvaga">ID da Vaga:</label>
+                    <input type="text" id="idvaga" name="idvaga" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="descricao">Descrição do Cargo:</label>
+                    <input type="text" id="descricao" name="descricao" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reqObrigatorios">Requisitos Obrigatórios:</label>
+                    <textarea id="reqObrigatorios" name="reqObrigatorios" rows="4" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="reqDesejaveis">Requisitos Desejáveis:</label>
+                    <textarea id="reqDesejaveis" name="reqDesejaveis" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="remuneracao">Remuneração (R$):</label>
+                    <input type="number" id="remuneracao" name="remuneracao" step="0.01" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="beneficios">Benefícios:</label>
+                    <textarea id="beneficios" name="beneficios" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="localTrabalho">Local de Trabalho:</label>
+                    <input type="text" id="localTrabalho" name="localTrabalho" required>
+                </div>
+                
+                <button type="submit">Cadastrar Vaga</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EMPREGOS. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas em Aberto - EMPREGOS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para a página de lista */
+        .job-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .job-table th, .job-table td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+        }
+        .job-table th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        .job-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .empty-message {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+        }
+        .action-buttons button {
+            padding: 8px 12px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-edit {
+            background-color: #3498db;
+            color: white;
+        }
+        .btn-edit:hover {
+            background-color: #2980b9;
+        }
+        .btn-delete {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .btn-delete:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Vagas de Emprego</h1>
+            <nav>
+                <a href="cadastro.html">Cadastrar Nova Vaga</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Vagas em Aberto</h2>
+        <div class="card">
+            <table class="job-table">
+                <thead>
+                    <tr>
+                        <th>ID da Vaga</th>
+                        <th>Descrição do Cargo</th>
+                        <th>Remuneração</th>
+                        <th>Local de Trabalho</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-vagas">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 EMPREGOS. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
